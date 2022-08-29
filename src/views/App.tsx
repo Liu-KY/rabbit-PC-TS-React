@@ -1,9 +1,17 @@
 import React from 'react';
-import './App.css';
+import request from '../utils/request'
+import  './App.less'
+
+const test = async () => {
+  const res = await request.get('/home/index')
+  console.log(res)
+}
+test ()
+
 
 function App() {
   return (
-    <div>首页</div>
+    <div className='div'>首页</div>
   );
 }
 
